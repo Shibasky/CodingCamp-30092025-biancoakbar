@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <div class="todo-container">
+        <h2>To Do List</h2>
+        
+        <!-- Input Area -->
+        <div class="input-area">
+            <input type="text" id="taskInput" placeholder="Add a task...">
+            <input type="date" id="dateInput">
+            <button id="addBtn">+</button>
+        </div>
+        
+        <!-- Filter & Delete -->
+        <div class="filter-area">
+            <button id="filterBtn">Filter</button>
+            <button id="deleteAll" class="delete">Delete All</button>
+        </div>
+
+        <!-- Task Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="taskList">
+                <tr><td colspan="4" class="empty">No task found</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
