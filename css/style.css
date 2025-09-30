@@ -75,6 +75,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+    text-decoration: none;
 }
 
 .filter-area button {
@@ -83,6 +84,25 @@ body {
     border: none;
     cursor: pointer;
     font-weight: 500;
+}
+
+.filter-area button:hover {
+    background: #0f172a;
+}
+
+#filterSelect {
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+    background: #334155;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#filterSelect option {
+    background: #1e293b;
+    color: white;
 }
 
 #filterBtn {
@@ -98,6 +118,79 @@ body {
 /* Table */
 table {
     width: 100%;
+    border-collapse: collapse;
+    background: #0f172a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #334155;
+    color: #cbd5e1;
+}
+
+.table th {
+    background: #1e293b;
+    font-weight: 500;
+}
+
+table td.empty {
+    text-align: center;
+    color: #64748b;
+    padding: 20px;
+}
+
+.status {
+    padding: 5px 8px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.completed {
+    background: #22c55e;
+    color: white;
+}
+
+.pending {
+    background: #facc15;
+    color: black;
+}
+
+/* Popup Overlay */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+/* Actions */
+.action-btn {
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    margin: 0 3px;
+    font-size: 14px;
+}
+
+.done {
+    background: #22c55e;
+    color: white;
+}
+
+.remove {
+    background: #ef4444;
+    color: white;
 }
 
 

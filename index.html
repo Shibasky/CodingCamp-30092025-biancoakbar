@@ -19,7 +19,11 @@
         
         <!-- Filter & Delete -->
         <div class="filter-area">
-            <button id="filterBtn">Filter</button>
+            <select id="filterSelect">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="pending">Pending</option>
+            </select>
             <button id="deleteAll" class="delete">Delete All</button>
         </div>
 
@@ -37,6 +41,7 @@
                 <tr><td colspan="4" class="empty">No task found</td></tr>
             </tbody>
         </table>
+
     </div>
 
     <script src="js/script.js"></script>
