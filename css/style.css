@@ -1,0 +1,103 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-container {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.todo-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+/* Input */
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-area input, .input-area button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+#taskInput {
+    flex: 2;
+    background: #0f172a;
+    color: #fff;
+    border: 1px solid #334155;
+}
+
+#dateInput {
+    flex: 1;
+    background: #0f172a;
+    color: #fff;
+    border: 1px solid #334155;
+}
+
+#addBtn {
+    background: #6366f1;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addBtn:hover {
+     background: #4f46e5;
+}
+
+/* Filter Area */
+.filter-area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.filter-area button {
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#filterBtn {
+    background: #334155;
+    color: white;
+}
+
+.delete {
+    background: #6366f1;
+    color: white;
+}
+
+/* Table */
+table {
+    width: 100%;
+}
+
+
